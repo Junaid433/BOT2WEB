@@ -1,7 +1,7 @@
 # BOT2WEB
 A bridge between telegram cc checker bots and the web
 
-Installation:
+## Installation:
 
   Python 3.11 and Pyrogram 2.0 + is recommended
 
@@ -11,7 +11,7 @@ Installation:
 
   After configuration, click start.bat If you want to start manually start backend/app.py and frontend/main.py
 
-Support:
+## Support:
  
   Telegram (https://t.me/fakehecker)
 
@@ -19,7 +19,7 @@ Support:
 
   Open issues on github
 
-Donation:
+## Donation:
 
   BTC: ```35s7bwSiLocbs2wYg7HdsHihNbRSgq4DFi```
 
