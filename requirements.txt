@@ -1,3 +1,4 @@
 pyrogram
 requests
 tgcrypto
+flask
