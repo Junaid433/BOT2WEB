@@ -1,0 +1,704 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luckiest+Guy&family=Sedgwick+Ave&display=swap);
+.badge-info {
+    color: #0ab9cb;
+    background-color: #17a2b803;
+    font-size: 18px
+}
+
+.badge-success {
+    color: #28a745;
+    background-color: transparent;
+    line-height: 1;
+    margin-top: -18px;
+    font-size: 18px
+}
+
+:root {
+    --hyper-font: "Bebas Neue";
+    --hyper-bg-color: #111
+}
+
+input.form-control.hyper_input {
+    font-family: var(--hyper-font) !important;
+    border: none;
+    padding-bottom: 4px;
+    font-weight: 400;
+    -webkit-text-fill-color: #d5ddd5;
+    background: #18191e !important;
+    box-shadow: 0 1px 2px #0000005c;
+    border-bottom: solid 2px;
+    border-image: linear-gradient(45deg, #7017d1, #28a743) 1
+}
+
+::-webkit-scrollbar {
+    width: 5px
+}
+
+::-webkit-scrollbar-track {
+    background: #181818
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e1f1e
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #272727
+}
+
+h3 {
+    font-weight: 600
+}
+
+.liner {
+    border-top: 1px #4c4c4c solid
+}
+
+.card-body.cvv.form-login {
+    box-shadow: none;
+    border-top: none
+}
+
+a,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+select,
+span {
+    font-family: var(--hyper-font);
+    font-weight: 400;
+    letter-spacing: 1px
+}
+
+center.text-muted.wrn_txt {
+    color: #a900ff !important;
+    font-family: "Bebas Neue";
+    background: #9d00ff12;
+    letter-spacing: 2px;
+    padding: 3px 0 1px;
+    border-radius: 3px
+}
+
+.hyper_line {
+    border-top: solid 2px;
+    border-image: linear-gradient(45deg, #7017d1, #28a743) 1
+}
+
+.row.frm {
+    width: 420px;
+    margin-top: 100px
+}
+
+.logo_large {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    background: linear-gradient(45deg, #7017d1, #28a743);
+    padding: 5px 13px 3px;
+    border-radius: 0;
+    height: 35px;
+    width: 35px;
+    clip-path: polygon(76% 0, 96% 30%, 36% 23%, 100% 70%, 65% 100%, 0 91%, 21% 72%, 61% 71%, 1% 29%, 24% 0)
+}
+
+div#wrn span {
+    font-size: 12px
+}
+
+div#wrn {
+    background: #1b1c22 !important;
+    border: none !important;
+    border-radius: 3px;
+    padding: 10px 20px 4px;
+    margin-top: 24px
+}
+
+.gline {
+    background: linear-gradient(45deg, #7017d1, #28a743);
+    height: 3px;
+    width: 0%
+}
+
+div#wrn h4 {
+    background: -webkit-linear-gradient(45deg, #bf17d1, #28a743);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+div#wrn span {
+    background: -webkit-linear-gradient(45deg, #9237f5, #e42ae7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+b#wrn {
+    font-family: var(--hyper-font) !important;
+    background: #1c1e24 !important;
+    border-radius: 1px;
+    width: 100% !important;
+    border: transparent;
+    color: #f1f5f1;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 0 1px 3px #0000004d;
+    letter-spacing: 4px !important;
+    padding: 8px 0 5px
+}
+
+button#testar {
+    font-family: var(--hyper-font) !important;
+    background: #1c1e24 !important;
+    border-radius: 1px;
+    width: 100% !important;
+    border: transparent;
+    color: #f1f5f1;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 0 1px 3px #0000004d;
+    letter-spacing: 4px !important;
+    padding: 8px 0 5px
+}
+
+button#mostra2 {
+    border: solid 1px #e71361;
+    font-size: 17px;
+    margin: 14px 6px;
+    background: 0 0;
+    padding: 4px 10px 1px;
+    color: #fff;
+    font-family: "Bebas Neue"
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    font-weight: 500 !important;
+    font-size: 18px;
+    background: #1a1a1a1f;
+    width: 140px;
+    padding: 5px 5px 4px;
+    text-align: center;
+    font-family: var(--hyper-font);
+    letter-spacing: 1px;
+    color: #fff !important
+}
+
+.md-form {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+button#mostra3 {
+    border: solid 1px #e77913;
+    font-size: 17px;
+    margin: 14px 6px;
+    background: 0 0;
+    padding: 4px 10px 1px;
+    color: #fff;
+    font-family: "Bebas Neue";
+    margin-top: 18px
+}
+
+button#mostra4 {
+    font-size: 17px;
+    margin: 14px 6px;
+    border: solid 1px #12ff00;
+    background: 0 0;
+    padding: 4px 10px 1px;
+    color: #fff;
+    font-family: "Bebas Neue";
+    margin-top: 18px
+}
+
+a.nav-link {
+    text-transform: uppercase;
+    font-size: 12px
+}
+
+.btn-logout {
+    color: #e34966 !important;
+    border: none;
+    background: #e3496605;
+    border-radius: 3px;
+    padding: 8px 20px
+}
+
+.card.wd {
+    margin: 0 20px
+}
+
+button#mostra {
+    font-size: 17px;
+    margin: 14px 6px;
+    border: solid 1px #12ff00;
+    background: 0 0;
+    padding: 4px 10px 1px;
+    color: #fff;
+    font-family: "Bebas Neue";
+    margin-top: 18px
+}
+
+.sheader {
+    text-align: start
+}
+
+.sheader span {
+    color: #9f9f9f
+}
+
+.sheader h4 {
+    color: #fff
+}
+
+#tgid {
+    font-family: var(--hyper-font) !important;
+    border: none;
+    font-weight: 400;
+    -webkit-text-fill-color: #8b8d8b;
+    background: 0 0 !important;
+    font-size: 25px;
+    padding: 10px 10px 6px;
+    letter-spacing: 2px;
+    box-shadow: none !important
+}
+
+#passid {
+    font-family: var(--hyper-font) !important;
+    border: none;
+    font-weight: 400;
+    -webkit-text-fill-color: #8b8d8b;
+    background: 0 0 !important;
+    font-size: 25px;
+    padding: 10px 10px 6px;
+    letter-spacing: 2px;
+    box-shadow: none !important;
+    text-align: center !important
+}
+
+button#passbtn {
+    font-family: var(--hyper-font) !important;
+    background: #1d1e24 !important;
+    border-radius: 2px;
+    width: 100% !important;
+    border: none;
+    color: #e7eced;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 0 1px 3px #0000004d;
+    letter-spacing: 4px !important;
+    padding: 8px 0 5px
+}
+
+button#conbtn {
+    font-family: var(--hyper-font) !important;
+    background: #1d1e24 !important;
+    border-radius: 2px;
+    width: 100% !important;
+    border: transparent;
+    color: #e7eced;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 1px 3px #0000004d;
+    letter-spacing: 4px !important;
+    padding: 8px 0 5px
+}
+
+textarea#lista {
+    margin-top: 15px;
+    font-family: "Bebas Neue";
+    background: #18191e !important;
+    border-bottom: solid 2px !important;
+    border: none;
+    border-radius: 0;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    box-shadow: 0 1px 2px #0000005c;
+    border-image: linear-gradient(45deg, #7017d1, #28a743) 1;
+    padding: 20px;
+    letter-spacing: 1px;
+    height: 85px
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 600px
+    }
+}
+
+select#curr, select#type, select#forward {
+    padding: 9px;
+    font-family: var(--hyper-font) !important;
+    border: none;
+    font-weight: 400;
+    -webkit-text-fill-color: #d5ddd5;
+    background: #18191e !important;
+    box-shadow: 0 1px 2px #0000005c;
+    border-bottom: solid 2px;
+    border-image: linear-gradient(45deg, #7017d1, #28a743) 1
+}
+
+.md-form {
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #904ad7
+}
+
+.hyper_input {
+    background: #0b0b0c !important;
+    border: #121111 solid 1px;
+    border-radius: 0;
+    font-family: Inter;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+    box-shadow: 0 1px 3px #00000000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 8px 18px;
+    text-align: center;
+    text-transform: capitalize
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 675px
+    }
+}
+
+@media (max-width:700px) {}
+
+.logo_large_med {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    height: 22px !important;
+    background: linear-gradient(45deg, #7a00ff, #2884a7);
+    clip-path: polygon(49% 53%, 49% 52%, 92% 4%, 81% 69%, 49% 100%, 49% 100%, 16% 68%, 3% 3%);
+    background: linear-gradient(45deg, #00ff7e, #2895a7) !important;
+}
+
+.card-body.hyper_dead {
+    border-image: linear-gradient(80deg, #8714ef, #ef1450) 1 !important
+}
+
+.card-body.cvv {
+    border-image: linear-gradient(241deg, #00ff2b, #8714ef) 1 !important
+}
+
+.card-body.ccn {
+    border-image: linear-gradient(80deg, #6200ff, #f7900b) 1 !important
+}
+
+.card.wd .card-body {
+    padding-bottom: 2px
+}
+
+.badge-warning {
+    color: #fff;
+    background-color: #ffc107;
+    border-radius: 1px
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-radius: 1px
+}
+
+span#\.aprovadas,
+span#\.charged {
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+div#bode2_example {
+    background: #181818;
+    padding: 10px;
+    box-shadow: 0 1px 3px #00000021;
+    border: 1px solid #121212;
+    border-radius: 3px;
+    border-left: solid 1px #ff0049
+}
+
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    font-weight: 400;
+    height: 30px;
+    padding-top: 3px;
+    font-family: "Bebas Neue"
+}
+
+.link {
+    color: #aaa
+}
+
+p.hyper_credit {
+    font-size: 11px;
+    letter-spacing: 2px
+}
+
+li.nav-item {
+    margin: 5px
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(148, 145, 145, .86);
+    font-size: 16px
+}
+
+#skkey, #teleid, select#curr, select#type, select#forward {
+    border-image: linear-gradient(45deg, #d11739, #a75128) 1 !important
+}
+
+body>div>center>div>div>div>div:nth-child(8) {
+    border-top: solid 2px !important;
+    border-radius: 2px
+}
+
+.added {
+    background: linear-gradient(47deg, #08930c 61%, #5fa728) !important
+}
+
+.warner {
+    margin-top: 12px;
+    background: #0708081c !important;
+    padding: 19px;
+    text-align: start;
+    line-height: 2;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #0000005c
+}
+
+.warner h4 {
+    color: #bdbcbafc;
+    margin: 0;
+    font-size: 20px
+}
+
+.warner span {
+    color: #7e7c79fc;
+    font-size: 16px
+}
+
+.warner span a {
+    text-decoration: none;
+    color: #1470e3fc;
+    font-size: 16px
+}
+
+button#disbtn {
+    font-family: var(--hyper-font) !important;
+    background: #4a46461f !important;
+    border-radius: 2px;
+    width: 100% !important;
+    border: none;
+    color: #b1a1a3;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 0 1px 3px #0000004d;
+    letter-spacing: 4px !important;
+    padding: 8px 0 5px
+}
+
+#disbtn b {
+    letter-spacing: 1px !important
+}
+
+.card-body.cvv.mchk.form-login {
+    box-shadow: none !important;
+    background: #17181c !important
+}
+
+.card-body.loginf.cvv.form-login {
+    border: solid 1px #04040412 !important;
+    margin-top: 10%
+}
+
+.card-body.cvv.form-login {
+    margin-top: 0;
+    background: #18191e !important;
+    padding: 19px;
+    text-align: start;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #0000005c
+}
+
+a.nav-link.addbot {
+    color: #eaecee !important;
+    background: linear-gradient(47deg, #7017d1 61%, #9f28a7);
+    padding: 3px 0 0;
+    border: none;
+    border-radius: 1px;
+    margin-top: 5px
+}
+
+.md-form .badge {
+    color: #b400ff;
+    font-size: 16px
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(227 219 219 / 90%)
+}
+
+.container-fluid {
+    width: 90%
+}
+
+.hyperline {
+    margin: 0
+}
+
+div#bode,
+div#bode4 {
+    background: 0 0;
+    padding: 10px 20px 0;
+    box-shadow: 0 1px 3px #0000000d;
+    border: 1px solid #16a93c05;
+    border-radius: 3px;
+    margin-bottom: 18px
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(157, 56, 251, .86);
+    font-size: 16px
+}
+
+div#bode4 .hyperline {
+    margin-bottom: -12px;
+    margin-left: 18px
+}
+
+div#bode .hyperline {
+    margin-bottom: -12px;
+    margin-left: 18px
+}
+
+span#\.edrovadas .hyperline,
+span#\.reprovadas .hyperline {
+    margin-bottom: -22px;
+    margin-left: 20px
+}
+
+.logo_large_med {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    background: linear-gradient(45deg, #7017d1, #28a743);
+    padding: 5px 13px 3px;
+    border-radius: 0;
+    width: 22px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding: 1px;
+    background: #18191e !important;
+    box-shadow: 0 1px 2px #0000003b
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    background-color: transparent;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    border-top: solid 2px;
+    border-image: linear-gradient(80deg, #4b00ff, #ef1450) 1;
+    box-shadow: 0 1px 3px #00000040
+}
+
+.badge-danger,
+.badge-dark,
+.badge-info,
+.badge-success,
+.badge-warning {
+    color: #fff;
+    background-color: transparent;
+    line-height: 1;
+    margin-top: -18px;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(12 137 175 / 95%);
+    border-color: rgb(255 255 255 / 0%)
+}
+
+body {
+    background: #17181c !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%
+}
+
+.pos5 {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.pos6 {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.pos1 {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.pos2 {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.pos3 {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.pos4 {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.bg-dark {
+    background-color: #12121200 !important
+}
+
+.nav_bg {
+    background: #06060600;
+    padding: 10px
+}
+
+a.navbar-brand.hyper_logo {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    background: linear-gradient(45deg, #17d19b, #2848a7);
+    padding: 5px 13px 3px;
+    border-radius: 0;
+    height: 25px;
+    width: 25px;
+    clip-path: polygon(74% 55%, 100% 0, 100% 60%, 100% 100%, 24% 50%, 0 100%, 0 0)
+}

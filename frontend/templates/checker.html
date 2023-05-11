@@ -1,0 +1,388 @@
+<html>
+<head>
+    <title>HECKER BOT2WEB</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" id="bootstrap-css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" href="{{ url_for('static', filename='hyper.min.css') }}?v=2.5">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+    .navv {
+        margin: 0 20px;
+    }
+
+    #console select.form-control {
+        background: #1a1c22 !important;
+        border: none;
+    }
+
+    #console input.form-control {
+        background: #1f2128 !important;
+        border: none;
+    }
+
+    button#gerar {
+        letter-spacing: 2px;
+        width: 100% !important;
+        border: none;
+        background: #0c4624;
+        font-family: "bebas neue";
+        padding-top: 8px;
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    @media (max-width: 700px) {
+        .container {
+            /* padding: 1px 0!important; */
+        }
+    }
+
+    .card.card--dark .card-body {
+        margin: 30px 35px 0;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        padding: 1px;
+        background: transparent !important;
+        box-shadow: none;
+    }
+
+    select#curr {
+        padding: 9px;
+        font-family: var(--hyper-font) !important;
+        border: none;
+        font-weight: 400;
+        -webkit-text-fill-color: #d5ddd5;
+        background: #18191e !important;
+        box-shadow: 0 1px 2px #0000005c;
+        border-bottom: solid 1px;
+    }
+
+    textarea#lista {
+        margin-top: 15px;
+        font-family: "Bebas Neue";
+        background: #1a1b20 !important;
+    }
+
+    .logo_large_med {
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-family: monospace;
+        background: linear-gradient(45deg, #12ff00, #28a743);
+    }
+
+    input.form-control.hyper_input {
+        font-family: var(--hyper-font) !important;
+        border: none;
+        padding-bottom: 4px;
+        font-weight: 400;
+        -webkit-text-fill-color: #d5ddd5;
+        background: #1d1e24 !important;
+        box-shadow: 0 1px 2px #0000005c;
+        border-bottom: solid 1px;
+        border-image: linear-gradient(45deg, #12ff00, #28a743) 1;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        padding: 1px;
+        background: #18191e !important;
+        box-shadow: none;
+    }
+
+    textarea#lista {
+        margin-top: 15px;
+        font-family: "Bebas Neue";
+        background: #1d1e24 !important;
+        border-bottom: solid 1px !important;
+        border: none;
+        border-radius: 0;
+        color: #fff !important;
+        -webkit-text-fill-color: #fff;
+        box-shadow: 0 1px 2px #0000005c;
+        border-image: linear-gradient(45deg, #12ff00, #28a743) 1;
+    }
+
+    a.nav-link.addbot {
+        color: #f35205 !important;
+        background: transparent;
+        padding: 3px 0 0;
+        border: none;
+        border-radius: 1px;
+        margin-top: 5px;
+    }
+
+    .card-body.cvv.form-login {
+        margin-top: 0;
+        background: #18191e !important;
+        padding: 0 19px;
+    }
+
+    .genbtn {
+        float: right;
+        background: red;
+        padding: 2px 12px;
+        border-radius: 1px;
+        background: #1c1e24 !important;
+        font-family: "bebas neue";
+        padding-top: 6px;
+        margin-top: -7px !important;
+        margin-left: 0px !important;
+        letter-spacing: 1px;
+        box-shadow: 0 1px 3px #0000000d;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .denbtn {
+        float: right;
+        background: red;
+        padding: 2px 12px;
+        border-radius: 1px;
+        background: #1c1e24 !important;
+        font-family: "bebas neue";
+        padding-top: 6px;
+        margin-top: -7px !important;
+        margin-left: 0px !important;
+        letter-spacing: 1px;
+        box-shadow: 0 1px 3px #0000000d;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    button#mostra4,
+    button#mostra,
+    button#mostra3,
+    button#mostra2 {
+        font-size: 17px;
+        margin: 17px 40px;
+    }
+
+    .card-body {
+        -ms-flex: 1 1 auto;
+        background-color: #1c1e24 !important;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+        border-top: none;
+        border-image: linear-gradient(80deg, #4b00ff, #ef1450) 1;
+        box-shadow: 0 1px 3px #00000040;
+    }
+
+    .logo_large_med {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body class="hyper_container">
+<div class="gline"></div>
+<div class="okay">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="navv">
+                <center>
+                    <div class="logo_large_med"></div>
+                </center>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<center>
+    <div class="container">
+
+        <div class="row justify-content-md-center" id="gencon">
+            <div class="col-md-12">
+
+                <div class="card card--dark">
+                    <div class="card-body">
+                        <form name="console" id="console" role="form" method="POST">
+                            <div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <div class="form-group">
+                                        <input id="ccpN" name="ccp" maxlength="190000000000" type="text" id="inputbin" class="form-control" style="border-color: #B0CCF0;background: transparent;color: white;" placeholder="Checkout Link">
+                                    </div>
+                                    </div>
+                               <script>
+const form = document.querySelector('form');
+form.addEventListener('submit', async (event) => {
+event.preventDefault();
+const ccpInput = document.getElementById('ccpN').value;
+const url = `/grab?ccpN=${ccpInput.replace("#", "%23")}`;
+try {
+const response = await fetch(url);
+const data = await response.json();
+if ('error' in data) {
+  alert(data['error']);
+} else {
+  const pkInput = document.getElementById('pk');
+  const csInput = document.getElementById('cs');
+  const emailInput = document.getElementById('email');
+  const amountInput = document.getElementById('amt');
+  const currencyInput = document.getElementById('curr');
+  pkInput.value = data['pk'];
+  csInput.value = data['checkout'];
+  emailInput.value = data['email'];
+  amountInput.value = data['amount'];
+  currencyInput.value = data['currency'];
+}
+} catch (error) {
+console.error(error);
+alert('An error occurred while fetching CS details.');
+}
+});
+                                </script>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 col-lg-6">
+                                        <div class="form-group">
+                                            <select type="text" name="ccoudatfmt" class="input_text" style="display:none;">
+                      <option value="CHECKER" selected="selected">CHK</option>
+                      <option value="CSV">CSV</option>
+                      <option value="XML">XML</option>
+                      <option value="JSON">JSON</option>
+                    </select>                                         
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-lg-6">
+                                        <div class="form-group">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                    <button type="submit" class="btn btn-outline-light" style="width:95%;border-color: #B0CCF0;margin-top: 19px;margin-left: 13px" id="gerar">Grab</button>
+                                   
+                                </div>
+                                    <script>
+const button = document.getElementById("gerar");
+button.addEventListener("click", function() {
+button.textContent = "Processing...";
+setTimeout(function() {
+  button.textContent = "Grab";
+}, 5000);
+});
+                                        </script>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card col-md-12">
+
+                <div class="card-body cvv mchk form-login">
+                    <div class="md-form">
+                        <div class="col-md-12">
+
+                            <center>
+                                <div class="md-form" id="tbar">
+                                    <span>CVV</span>&nbsp<span id="cLive" class="badge badge-success">0 </span>
+
+                                    <span>Checked</span>&nbsp<span id="total" class="badge badge-info">0 </span>
+                                    <span>Total</span>&nbsp<span id="carregadas" class="badge badge-dark">0 </span>
+                                </div><br>
+                                <textarea type="text" placeholder="Drop Cards Here" id="lista" class="md-textarea form-control" rows="4"></textarea>
+                            </center>
+                            &nbsp;
+                            <br>
+                            <center>
+                            <div class="form-row">
+                                    <div class="form-group col-md-12" id="chkType">
+                                        <select name="type" id="type" class="form-control hyper_input">
+                      <option value="vbv">Raven VBV [vbv]</option>
+                      <option value="auth">Raven BT Auth [chk]</option>
+                      <option value="spamxx">Spamx [x]</option>
+                    </select>
+                                    </div>
+</div>
+                            <div class="row">
+                 <div class="col-md-6">
+                </div>     
+                                </div>
+                                <div class="row">              
+                                </div>
+                                <button class="btn btn-success hyperbtn" id="testar" onclick="start_hyper()"><b>Start Check</b></button>
+                            </center>
+                        </div>
+                    </div>
+</center>
+</div>
+<br>
+<div class="container">
+    <div class="col-md-12">
+        <div class="card wd">
+            <div class="pos1">
+                <button id="mostra4" class="btn btn-success">Show</button><br>
+            </div>
+            <div class="pos2">
+            </div>
+            <div class="card-body cvv">
+                <h6 class="card-title">Hits - <span id="cLive3" class="badge badge-success">0</span></h6>
+                <div id="bode4"><span id=".charged" class="charged"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;</br>
+    <div class="col-md-12">
+        <div class="card wd">
+            <div class="pos3">
+                <button id="mostra" class="btn btn-success">Show</button><br>
+            </div>
+            <div class="pos4">
+            </div>
+            <div class="card-body cvv">
+                <h6 class="card-title">live - <span id="cLive2" class="badge badge-success">0</span></h6>
+                <div id="bode"><span id=".aprovadas" class="aprovadas"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;</br>
+
+    <div class="col-md-12">
+        <div class="card wd hyper_dead">
+            <div class="pos5">
+                <button id="mostra2" class="btn btn-danger">Show</button><br>
+            </div>
+            <div class="pos6">
+            </div>
+            <div class="card-body hyper_dead">
+
+                <h6 class="card-title">dead - <span id="cDie2" class="badge badge-danger">0</span></h6>
+                <div id="bode2"><span id=".reprovadas" class="reprovadas"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+
+</center>
+
+<center>
+    <p class="hyper_credit">CHECKER BY <a href="https://t.me/heckerdrops" class="link">HECKERDROPS</a></p>
+</center>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='tata.js') }}"></script>
+<script src="{{ url_for('static', filename='hyper.min.js') }}?v=2.6"></script>
+
+    <footer>
+    </footer>
+</body>
+</html>
